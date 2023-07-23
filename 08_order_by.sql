@@ -3,4 +3,4 @@
 
 SELECT *
 FROM users
-ORDER BY dob ASC
+ORDER BY dob ASC;

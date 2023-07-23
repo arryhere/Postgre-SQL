@@ -1,0 +1,9 @@
+SELECT *
+FROM users
+OFFSET 2;
+
+
+SELECT *
+FROM users
+OFFSET 2
+LIMIT 2;
