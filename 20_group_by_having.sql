@@ -1,8 +1,8 @@
 SELECT country,
-       COUNT(*)
+       count(*)
 FROM users
 GROUP by country
-HAVING COUNT(*) >= 3
+HAVING count(*) >= 3
 ORDER BY country ASC;
 
 -- the above query can also be done as a sub-query
@@ -10,7 +10,7 @@ ORDER BY country ASC;
 SELECT *
 FROM
   (SELECT country,
-          COUNT(*) AS _count
+          count(*) AS _count
    FROM users
    GROUP by country
    ORDER BY country ASC) AS subtable

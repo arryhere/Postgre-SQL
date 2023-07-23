@@ -14,7 +14,15 @@ CREATE TABLE users (
   system_time			TIMESTAMPTZ				NOT NULL		DEFAULT now()
 );
 
+CREATE TABLE cars (
+  id              UUID              NOT NULL    PRIMARY KEY DEFAULT gen_random_uuid(),
+  company         VARCHAR(255)      NOT NULL,
+  model           VARCHAR(255)      NOT NULL,
+  mfg_date        DATE              NOT NULL,
+  price           DOUBLE PRECISION  NOT NULL,
 
+  UNIQUE (company, model, year)
+);
 
 
 
