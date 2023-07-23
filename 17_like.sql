@@ -16,4 +16,14 @@ WHERE email LIKE '%example%';
 SELECT *
 FROM users
 WHERE email LIKE '%example%'
-  AND dob IS NOT NULL
+  AND dob IS NOT NULL;
+
+
+SELECT *
+FROM users
+WHERE email LIKE '_____@%';
+
+
+SELECT *
+FROM users
+WHERE country LIKE 'i%';

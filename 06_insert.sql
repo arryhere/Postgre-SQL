@@ -137,3 +137,14 @@ VALUES ('Rosaline',
         date_part('year', age(now(), '1998-04-17')),
         '1998-04-17',
         'Germany');
+
+
+INSERT INTO users (first_name, last_name, full_name, email, gender, age, dob, country)
+VALUES ('Hallbera',
+        'Agnarsson ',
+        'Hallbera Agnarsson',
+        'hallbera@example.is',
+        'Female',
+        date_part('year', age(now(), '1995-06-22')),
+        '1995-06-22',
+        'Iceland');
