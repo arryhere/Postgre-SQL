@@ -7,4 +7,5 @@ SELECT model,
        max(price),
        avg(price)
 FROM cars
-GROUP BY model
+GROUP BY model;
+
