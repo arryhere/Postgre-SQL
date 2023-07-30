@@ -32,6 +32,9 @@
   "[python]": {
     "editor.defaultFormatter": "ms-python.autopep8"
   },
+  "[sql]": {
+    "editor.defaultFormatter": "mtxr.sqltools"
+  },
   "rome.requireConfiguration": true,
   "python.analysis.typeCheckingMode": "off",
   "liveServer.settings.host": "127.0.0.1",
@@ -40,5 +43,10 @@
   "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
   "rust-analyzer.linkedProjects": [
     ".\\Cargo.toml",
-  ]
+  ],
+  "sqltools.format": {
+    "language": "sql",
+    "linesBetweenQueries": 3,
+    "reservedWordCase": "upper"
+  }
 }

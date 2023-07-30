@@ -6,5 +6,4 @@ WHERE country = 'India'
 
 SELECT *
 FROM users
-WHERE country IN ('India',
-                  'USA');
+WHERE country IN ('India', 'USA');

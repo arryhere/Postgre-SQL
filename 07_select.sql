@@ -3,6 +3,5 @@ FROM users;
 
 
 SELECT full_name,
-       age
+  age
 FROM users;
-

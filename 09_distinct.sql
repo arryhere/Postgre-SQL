@@ -1,4 +1,2 @@
-
 SELECT DISTINCT country
-from users;
-
+FROM users;

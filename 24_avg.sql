@@ -3,9 +3,8 @@ FROM cars;
 
 
 SELECT model,
-       min(price),
-       max(price),
-       avg(price)
+  min(price),
+  max(price),
+  avg(price)
 FROM cars
 GROUP BY model;
-

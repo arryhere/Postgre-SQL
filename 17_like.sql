@@ -1,5 +1,5 @@
 SELECT *
-from users
+FROM users
 WHERE last_name LIKE 'Das';
 
 
