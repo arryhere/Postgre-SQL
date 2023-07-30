@@ -57,7 +57,8 @@
       "driver": "PostgreSQL",
       "name": "POSTGRES",
       "database": "postgres",
-      "username": "postgres"
+      "username": "postgres",
+      "password": "postgres"
     }
   ]
 }
