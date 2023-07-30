@@ -48,5 +48,16 @@
     "language": "sql",
     "linesBetweenQueries": 3,
     "reservedWordCase": "upper"
-  }
+  },
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "POSTGRES",
+      "database": "postgres",
+      "username": "postgres"
+    }
+  ]
 }

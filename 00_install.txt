@@ -1,0 +1,13 @@
+
+• Windows
+
+- Install Path:
+  - C:\Program Files\PostgreSQL
+  - 
+
+- Connection
+  - host:       locahost
+  - port:       5432
+  - user:       postgres
+  - password:   postgres
+  - default db: postgres
