@@ -9,6 +9,12 @@ FROM users
 WHERE cars.id IS NULL;
 
 
+SELECT *
+FROM users
+  LEFT JOIN cars ON users.car_id = cars.id
+WHERE cars.* IS NULL;
+
+
 -- if pk and fk is same name, we can use USING keyword
 SELECT *
 FROM users
