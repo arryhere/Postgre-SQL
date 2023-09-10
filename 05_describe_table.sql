@@ -1,5 +1,7 @@
-SELECT table_name,
-  column_name,
-  data_type
-FROM information_schema.columns
+SELECT info.table_name,
+  info.column_name,
+  info.data_type,
+  info.column_default,
+  info.is_nullable
+FROM information_schema.columns AS info
 WHERE table_name = 'users';
