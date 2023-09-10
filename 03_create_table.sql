@@ -10,7 +10,8 @@ CREATE TABLE users (
   country VARCHAR(255) NOT NULL,
   utc_time TIMESTAMP NOT NULL DEFAULT timezone('UTC', NOW()),
   ist_time TIMESTAMP NOT NULL DEFAULT timezone('Asia/Kolkata', NOW()),
-  system_time TIMESTAMPTZ NOT NULL DEFAULT NOW()
+  system_time TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  car_id UUID REFERENCES cars (id) UNIQUE
 );
 
 
@@ -20,5 +21,5 @@ CREATE TABLE cars (
   model VARCHAR(255) NOT NULL,
   mfg_date DATE NOT NULL,
   price DOUBLE PRECISION NOT NULL,
-  UNIQUE (company, model, year)
+  UNIQUE (company, model, mfg_date)
 );
